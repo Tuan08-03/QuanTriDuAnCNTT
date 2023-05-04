@@ -1,0 +1,67 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acer Swift 3</h1>
+    <img class="thumbnail" src="{% static 'app/images/acerSwift3.jpg' %}" alt="Acer Swift 3">
+    <div class="product-details">
+        <p class="product-price">Giá: 21,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li><span class="highlight">Màn hình:</span> 14 inch Full HD IPS, viền mỏng</li>
+      <li><span class="highlight">Bộ vi xử lý:</span> Intel Core i5 hoặc i7 thế hệ thứ 10 hoặc 11</li>
+      <li><span class="highlight">Bộ nhớ RAM:</span> 8 GB hoặc 16 GB DDR4</li>
+      <li><span class="highlight">Ổ đĩa cứng:</span> 256 GB hoặc 512 GB hoặc 1 TB SSD</li>
+      <li><span class="highlight">Đồ họa:</span> Intel UHD Graphics hoặc NVIDIA GeForce MX350 hoặc MX450</li>
+      <li><span class="highlight">Hệ điều hành:</span> Windows 10 hoặc Windows 11</li>
+      <li><span class="highlight">Kết nối:</span> Wi-Fi 6, Bluetooth 5.0, cổng USB Type-C, cổng USB 3.0, cổng HDMI, đầu đọc thẻ nhớ SD</li>
+      <li><span class="highlight">Pin:</span> Li-ion 3 cell, thời lượng sử dụng lên đến 11 giờ</li>
+      <li><span class="highlight">Trọng lượng:</span> Khoảng 1,2 kg</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Chiếc laptop Acer Swift 3 là một trong những dòng sản phẩm được ưa chuộng của hãng Acer với thiết kế hiện đại, cấu hình mạnh mẽ và tính di động cao. Đây là một trong những lựa chọn phổ biến cho người dùng cần một chiếc laptop đa năng cho công việc và giải trí hàng ngày.</p>
+            </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

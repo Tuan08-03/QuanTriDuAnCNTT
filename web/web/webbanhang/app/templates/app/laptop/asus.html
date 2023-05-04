@@ -1,0 +1,153 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+  {% block news-content %}
+  <head>
+    <title>Laptop Asus</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #00ff00;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      nav li {
+        float: left;
+      }
+      nav li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        background-color: #ddd;
+      }
+      main {
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .product {
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+      }
+      .product img {
+        max-width: 100%;
+        max-height: 200px;
+      }
+      .product h2 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      .product p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #666;
+      }
+      .product button {
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #0071c5;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .product button:hover {
+        background-color: #005d9c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>Laptop Asus</strong></h1>
+      <style>
+        h1{
+          color: red
+        }
+      </style>
+    </header>
+    
+        <main>
+          <div class="row">
+            <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/asusZenobook.jpg' %}" alt="Asus ZenBook Pro">
+            <h2>Asus ZenBook Pro</h2>
+            <h3>Giá: 21,000,000 VND</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'Asuszenbook' %}">Thông tin sản phẩm</a>
+              </div>
+            
+              <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/asusVivobook.jpg' %}" alt="Asus VivoBook S">
+            <h2>Asus VivoBook S</h2>
+            <h3>Giá: 30,950,000 VND</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'Asusvivobook' %}">Thông tin sản phẩm</a>
+              </div>
+
+              <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/asusROG.jpg' %}" alt="Asus ROG">
+            <h2>Asus ROG</h2>
+            <h3>Giá: 27,000,000 VND</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'AsusROG' %}">Thông tin sản phẩm</a>
+              </div>
+
+            <div class="col-lg-3">
+                <img class="thumbnail" src="{% static 'app/images/asusTUF.jpg' %}" alt="Asus TUF">
+                <h2>Asus TUF</h2>
+                <h3>Giá: 32,890,000 VND</h3>
+                <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                <a class="btn btn-outline-success" href="{% url 'AsusTUF' %}">Thông tin sản phẩm</a>
+            </div>
+                  
+            <div class="col-lg-3">
+                <img class="thumbnail" src="{% static 'app/images/asusChromebook.jpg' %}" alt="Asus Chromebook Flip">
+                <h2>Asus Chromebook Flip</h2>
+                <h3>Giá: 17,000,000 VND</h3>
+                <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                <a class="btn btn-outline-success" href="{% url 'AsusChrome' %}">Thông tin sản phẩm</a>
+                      </div>
+                      
+            <div class="col-lg-3">
+                <img class="thumbnail" src="{% static 'app/images/asusStudiobook.jpg' %}" alt="Asus ProArt StudioBook">
+                <h2>Asus ProArt StudioBook</h2>
+                <h3>Giá: 19,990,000 VND</h3>
+                <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                <a class="btn btn-outline-success" href="{% url 'AsusProart' %}">Thông tin sản phẩm</a>
+            </div>
+        </div>
+        <style>
+          h3{
+            font-weight: bold;
+          }
+        </style>
+      </div>
+    </main>
+    </body>
+    {% endblock news-content %}
+    </html>

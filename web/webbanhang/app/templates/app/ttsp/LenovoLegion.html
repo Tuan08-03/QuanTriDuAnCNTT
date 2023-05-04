@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lenovo Legion 5</h1>
+    <img class="thumbnail" src="{% static 'app/images/lenovoLegion.jpg' %}" alt="Lenovo Legion 5">
+    <div class="product-details">
+        <p class="product-price">Giá: 21,550,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: thường là 15,6 hoặc 17,3 inch, độ phân giải Full HD hoặc 4K UHD, tốc độ làm tươi 144Hz hoặc 165Hz</li>
+		<li>Vi xử lý: Intel Core i5 hoặc i7 hoặc AMD Ryzen 5 hoặc 7</li>
+		<li>RAM: từ 8GB đến 32GB DDR4</li>
+		<li>Ổ đĩa cứng: từ 256GB đến 1TB PCIe NVMe SSD hoặc ổ đĩa cứng HDD 1TB hoặc 2TB</li>
+		<li>Card đồ họa: NVIDIA GeForce RTX hoặc AMD Radeon RX hoặc NVIDIA GeForce GTX</li>
+		<li>Kết nối: thường bao gồm cổng USB Type-C, USB 3.1, HDMI, Ethernet, và thẻ nhớ SD</li>
+		<li>Trọng lượng: từ 2,3kg đến 2,9kg tùy theo model</li>
+		<li>Hệ điều hành: Windows 10</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Lenovo Legion 5 là một trong những dòng laptop gaming hàng đầu của Lenovo, với hiệu năng cao và khả năng đáp ứng các nhu cầu chơi game đòi hỏi cao. Với màn hình có tốc độ làm tươi cao và độ phân giải sắc nét, Legion 5 cho phép người dùng tận hưởng trải nghiệm game đỉnh cao với độ mượt mà và chân thực.</li>
+    <li>Được trang bị vi xử lý mạnh mẽ, RAM đủ lớn, ổ đĩa cứng nhanh và card đồ họa tốt, Legion 5 có khả năng xử lý tốt các tác vụ gaming, đồ họa và đa nhiệm nặng. Thiết kế của Legion 5 cũng được tối ưu hóa để làm giảm nhiệt độ và giảm tiếng ồn, mang lại trải nghiệm chơi game mượt mà và êm ái hơn.</li>
+    <li>Ngoài ra, Legion 5 còn có thiết kế mạnh mẽ, cá tính và đẹp mắt, làm cho nó trở thành lựa chọn phổ biến cho những game thủ đòi hỏi tính di động, thiết kế thời trang và hiệu năng cao. Tuy nhiên, vì được thiết kế với mục đích chơi game, nên pin của Legion 5 không được ấn tượng và thời lượng sử dụng có thể hạn chế. Ngoài ra, màn hình không được thực sự sáng và có thể bị lóa trong điều kiện ánh sáng mạnh.</li>
+    <li>Tổng quan, với hiệu năng mạnh mẽ, thiết kế cá tính và tính di động tốt, Lenovo Legion 5 là một trong những lựa chọn tốt nhất cho những game thủ đòi hỏi hiệu suất cao.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

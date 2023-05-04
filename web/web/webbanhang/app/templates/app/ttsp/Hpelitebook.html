@@ -1,0 +1,67 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>HP Elitebook 840</h1>
+    <img class="thumbnail" src="{% static 'app/images/hpElitebook.jpg' %}" alt="HP Elitebook 840">
+    <div class="product-details">
+        <p class="product-price">Giá: 21,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Thiết kế sang trọng: HP EliteBook 840 có thiết kế mỏng nhẹ, vỏ nhôm chắc chắn và kiểu dáng đẳng cấp, tạo nên một ấn tượng đầu tiên về sản phẩm.</li>
+        <li>Màn hình chất lượng cao: Laptop HP EliteBook 840 được trang bị màn hình LED 14 inch với độ phân giải cao, cho hình ảnh sắc nét và chất lượng màu sắc tốt.</li>
+        <li>Hiệu suất mạnh mẽ: Sản phẩm được trang bị vi xử lý Intel Core i5 hoặc i7, RAM lên đến 16GB và ổ cứng hoặc SSD với dung lượng lớn, đảm bảo khả năng xử lý nhanh chóng và hiệu quả công việc.</li>
+        <li>Bảo mật cao: HP EliteBook 840 được trang bị các tính năng bảo mật tiên tiến như cảm biến vân tay, công nghệ nhận diện khuôn mặt và tính năng tự mã hóa ổ cứng, giúp đảm bảo an toàn dữ liệu của người dùng.</li>
+        <li>Đa dạng kết nối: Sản phẩm được trang bị các cổng kết nối đa dạng như USB, HDMI, Ethernet, thẻ nhớ và cổng âm thanh, đáp ứng nhu cầu kết nối của người dùng.</li>
+        <li>Tính di động cao: HP EliteBook 840 có trọng lượng nhẹ và pin lâu dài, giúp người dùng dễ dàng di chuyển và làm việc trong thời gian dài mà không cần sạc lại pin thường xuyên.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Laptop HP EliteBook 840 là một sản phẩm cao cấp của HP, với thiết kế sang trọng, hiệu suất mạnh mẽ, tính bảo mật cao và tính di động ưu việt. Đây là lựa chọn lý tưởng cho những người làm việc chuyên nghiệp, 
+        đặc biệt là trong môi trường doanh nghiệp. Sản phẩm được trang bị các tính năng tiên tiến, giúp đáp ứng nhu cầu công việc đa dạng của người dùng và đảm bảo tính bảo mật của dữ liệu. Ngoài ra, tính di động 
+        cao cũng là một điểm nổi bật của HP EliteBook 840, giúp người dùng dễ dàng di chuyển và làm việc trên diện rộng mà không cần phải lo lắng về thời gian sử dụng pin. Tóm lại, HP EliteBook 840 là một lựa chọn 
+        hấp dẫn cho những ai đang tìm kiếm một laptop doanh nghiệp đáng tin cậy, với hiệu suất cao và tính bảo mật tốt.</p>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

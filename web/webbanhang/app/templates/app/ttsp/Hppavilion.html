@@ -1,0 +1,76 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>HP Pavilion 15</h1>
+    <img class="thumbnail" src="{% static 'app/images/hpPavilion15.jpg' %}" alt="HP Pavilion 15">
+    <div class="product-details">
+        <p class="product-price">Giá: 18,990,000</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: 15,6 inch độ phân giải Full HD (1920 x 1080), cung cấp hình ảnh sắc nét, sống động.</li>
+        <li>Bộ vi xử lý: Intel Core i5 hoặc i7 thế hệ mới nhất, cung cấp hiệu suất cao và tiết kiệm năng lượng.</li>
+        <li>Bộ nhớ RAM: Có nhiều tùy chọn RAM từ 8GB đến 16GB, giúp đáp ứng tốt các tác vụ đa nhiệm.</li>
+        <li>Lưu trữ: Có nhiều tùy chọn ổ cứng và SSD từ 256GB đến 1TB, giúp lưu trữ dữ liệu dễ dàng.</li>
+        <li>Đồ họa: Được trang bị card đồ họa rời Nvidia GeForce hoặc AMD Radeon, cung cấp khả năng xử lý đồ họa mạnh mẽ.</li>
+        <li>Hệ điều hành: Được cài đặt sẵn hệ điều hành Windows 10 hoặc Windows 11, cung cấp trải nghiệm người dùng tối ưu với tính năng mới nhất của Microsoft.</li>
+        <li>Pin: Pin lithium-ion cung cấp thời gian sử dụng lên đến 7-8 giờ, giúp hoạt động trong nhiều giờ mà không cần sạc lại.</li>
+        <li>Cổng kết nối: Cung cấp đa dạng các cổng kết nối như USB-C, USB-A, HDMI, thẻ nhớ SD, giúp kết nối dễ dàng với các thiết bị ngoại vi và lưu trữ bên ngoài.</li>
+    </ul>
+    <h2>Tính năng đặc biệt:</h2>
+    <ul>
+        <li>Tính năng âm thanh: HP Pavilion 15 được trang bị công nghệ âm thanh B&O, giúp trải nghiệm âm thanh sống động, rõ ràng và mạnh mẽ.</li>
+        <li>Đèn nền bàn phím: Đèn nền bàn phím có thể điều chỉnh độ sáng, giúp làm việc và chơi game trong điều kiện thiếu sáng.</li>
+        <li>Thiết kế thời trang: Với thiết kế mỏng nhẹ và sang trọng, HP Pavilion 15 là một lựa chọn phù hợp cho những người muốn sở hữu một chiếc laptop đẳng cấp.</li>
+        <li>Bảo mật vân tay: Một số phiên bản của HP Pavilion 15 được trang bị cảm biến vân tay tích hợp, giúp bảo vệ dữ liệu cá nhân và đăng nhập an toàn.</li>
+        <li>Màn hình cảm ứng: Một số phiên bản của HP Pavilion 15 được trang bị màn hình cảm ứng, giúp tương tác dễ dàng với các ứng dụng và tính năng trên Windows.</li>
+        <li>Khả năng nâng cấp: HP Pavilion 15 cho phép người dùng nâng cấp RAM, ổ cứng hoặc SSD để đáp ứng nhu cầu sử dụng trong tương lai.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Laptop HP Pavilion 15 là một sản phẩm đa năng và đẳng cấp, với hiệu suất cao, tính di động, âm thanh tuyệt vời và nhiều tính năng đặc biệt hấp dẫn. Nó là một lựa 
+        chọn hợp lý cho những người dùng có nhu cầu làm việc, học tập hoặc giải trí trên một chiếc laptop đẳng cấp của HP.</p>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

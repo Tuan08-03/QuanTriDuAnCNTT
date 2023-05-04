@@ -1,0 +1,68 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lenovo IdeaPad</h1>
+    <img class="thumbnail" src="{% static 'app/images/lenovoIdeapad.jpg' %}" alt="Lenovo IdeaPad">
+    <div class="product-details">
+        <p class="product-price">Giá: 18,550,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: thường là 14 hoặc 15,6 inch, độ phân giải Full HD hoặc 4K UHD</li>
+		<li>Vi xử lý: Intel Core i3 hoặc i5 hoặc i7 hoặc AMD Ryzen 3 hoặc 5 hoặc 7</li>
+		<li>RAM: từ 4GB đến 16GB DDR4</li>
+		<li>Ổ đĩa cứng: từ 128GB SSD đến 1TB HDD hoặc 512GB PCIe NVMe SSD</li>
+		<li>Card đồ họa: Intel UHD Graphics hoặc NVIDIA GeForce hoặc AMD Radeon</li>
+		<li>Kết nối: thường bao gồm cổng USB Type-C, USB 3.1, HDMI, Ethernet, và thẻ nhớ SD</li>
+		<li>Trọng lượng: từ 1,4kg đến 2,2kg tùy theo model</li>
+		<li>Hệ điều hành: Windows 10 hoặc Linux</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Lenovo IdeaPad là dòng laptop dành cho người dùng cá nhân của Lenovo, với thiết kế đa dạng và giá thành phải chăng. Laptop này thường được trang bị vi xử lý mạnh mẽ, RAM đủ lớn, ổ đĩa cứng nhanh, và card đồ họa tốt, đảm bảo khả năng xử lý tốt các tác vụ văn phòng, giải trí, và đa nhiệm.</li>
+    <li>Bên cạnh đó, IdeaPad còn có nhiều phiên bản với thiết kế đa dạng, bao gồm màn hình cảm ứng, bàn phím số, và thiết kế mỏng nhẹ. Điều này làm cho IdeaPad trở thành lựa chọn tuyệt vời cho các sinh viên và người dùng cá nhân đòi hỏi tính di động và thiết kế thời trang.</li>
+    <li>Tuy nhiên, một số model của IdeaPad có thể không được trang bị bộ pin lớn, dẫn đến thời lượng pin ngắn hơn so với các dòng laptop khác trên thị trường. Ngoài ra, vì giá thành phải chăng, chất lượng vật liệu và độ bền của IdeaPad cũng không cao bằng so với các dòng laptop cao cấp khác.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

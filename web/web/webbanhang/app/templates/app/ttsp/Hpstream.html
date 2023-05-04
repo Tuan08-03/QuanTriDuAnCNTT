@@ -1,0 +1,70 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>HP Stream 11-d001TU</h1>
+    <img class="thumbnail" src="{% static 'app/images/hpStream.jpg' %}" alt="HP Stream 11-d001TU">
+    <div class="product-details">
+        <p class="product-price">Giá: 14,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Bộ vi xử lý: Intel Celeron N2840 2,16 GHz</li>
+        <li>RAM: 2GB DDR3L</li>
+        <li>Bộ nhớ trong: 32GB eMMC</li>
+        <li>Màn hình: 11,6 inch, độ phân giải 1366x768 pixels</li>
+        <li>Hệ điều hành: Windows 8.1</li>
+        <li>Kết nối không dây: Wi-Fi, Bluetooth</li>
+        <li>Cổng kết nối: USB, HDMI, thẻ nhớ SD</li>
+        <li>Thời lượng pin: lên đến 8 giờ</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Laptop HP Stream 11-d001TU là một lựa chọn phù hợp cho những người dùng cần một thiết bị di động, nhỏ gọn và đáp ứng được các nhu cầu công việc và giải trí hàng ngày. Máy được trang bị bộ vi xử lý Intel Celeron, RAM 2GB và bộ nhớ trong 32GB, đủ để xử lý các tác vụ văn phòng, duyệt web và xem phim.</li>
+    <li>Màn hình độ phân giải cao, bàn phím đầy đủ kích thước và tính năng kết nối không dây giúp người dùng dễ dàng làm việc và giải trí trên máy. Đặc biệt, thời lượng pin lâu lên đến 8 giờ giúp đáp ứng được nhu cầu di chuyển và sử dụng trong thời gian dài mà không cần phải sạc liên tục.</li>
+    <li>Tuy nhiên, dung lượng bộ nhớ trong 32GB có thể hạn chế cho việc lưu trữ dữ liệu lớn, và cấu hình RAM 2GB cũng có thể hạn chế hiệu suất cho các tác vụ nặng. Ngoài ra, hệ điều hành Windows 8.1 cũng đã cũ, không được cung cấp bản cập nhật mới nhất.</li>
+    <li>Tóm lại, HP Stream 11-d001TU là một chiếc laptop nhỏ gọn, hiệu năng đáp ứng được nhu cầu cơ bản, thích hợp cho người dùng cần một thiết bị di động, nhẹ nhàng và đơn giản trong việc xử lý công việc hàng ngày và giải trí đồng thời hạn chế về dung lượng lưu trữ và hiệu suất cao. Điểm cộng lớn nhất của laptop này là thời lượng pin lâu, giúp người dùng có thể sử dụng trong thời gian dài mà không cần phải sạc liên tục. Ngoài ra, màn hình độ phân giải cao cũng mang đến trải nghiệm hình ảnh tốt cho việc giải trí, đồng thời bàn phím đầy đủ kích thước giúp người dùng dễ dàng nhập liệu.</li>
+    <li>Trên tổng thể, HP Stream 11-d001TU là một lựa chọn hợp lý cho những ai cần một chiếc laptop nhỏ gọn, di động và đáp ứng được các nhu cầu công việc và giải trí cơ bản. Tuy nhiên, người dùng cần lưu ý về dung lượng lưu trữ và hiệu suất, đồng thời cập nhật hệ điều hành để có trải nghiệm tốt nhất.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>HP Envy 13</h1>
+    <img class="thumbnail" src="{% static 'app/images/hpEnvy13.jpg' %}" alt="HP Envy 13">
+    <div class="product-details">
+        <p class="product-price">Giá: 15,050,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: Màn hình 13,3 inch, độ phân giải Full HD (1920x1080) hoặc 4K (3840x2160) với công nghệ viền mỏng cho trải nghiệm xem hình ảnh sống động và sắc nét.</li>
+        <li>Thiết kế: Thiết kế mỏng nhẹ và sang trọng với khung kim loại cao cấp, với các góc bo tròn tinh tế. Thiết bị có màu sắc đa dạng, bao gồm màu Bạc, Đen, Vàng hoặc Hồng.</li>
+        <li>Bộ vi xử lý: Sử dụng bộ vi xử lý Intel Core i5 hoặc i7 thế hệ thứ 10 hoặc thứ 11, giúp đáp ứng nhu cầu xử lý đa nhiệm và làm việc nặng nề.</li>
+        <li>Bộ nhớ: Hỗ trợ RAM DDR4 từ 8GB đến 16GB, giúp đảm bảo khả năng hoạt động mượt mà và nhanh chóng.</li>
+        <li>Lưu trữ: Tùy chọn lưu trữ SSD từ 256GB đến 1TB, cung cấp không gian lưu trữ rộng rãi và tốc độ truy xuất nhanh chóng.</li>
+        <li>Đồ họa: Sử dụng đồ họa tích hợp Intel Iris Xe Graphics hoặc NVIDIA GeForce MX450 (tùy chọn), giúp xử lý đồ họa và đa phương tiện mượt mà.</li>
+        <li>Pin: Pin lithium-ion tích hợp có thể sử dụng lên đến 10 giờ, giúp laptop hoạt động liên tục trong nhiều giờ mà không cần sạc lại.</li>
+        <li>Hệ điều hành: Được cài đặt sẵn hệ điều hành Windows 10 hoặc Windows 11, cung cấp trải nghiệm người dùng tối ưu với tính năng mới nhất của Microsoft.</li>
+        <li>Tính năng độc quyền: HP Envy 13 đi kèm với nhiều tính năng độc quyền của HP như HP Sure View, HP Privacy Camera, HP Fast Charge và HP Audio Boost, giúp bảo vệ quyền riêng tư, tăng cường hiệu suất sạc nhanh, và cải thiện trải nghiệm âm thanh.</li>
+        <li>Cổng kết nối: Cung cấp đa dạng các cổng kết nối như USB-C, USB-A, HDMI, và thẻ nhớ SD, giúp kết nối dễ dàng với các thiết bị ngoại vi và lưu trữ bên ngoài.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Laptop HP Envy 13 là một trong những dòng sản phẩm cao cấp của HP, được thiết kế dành riêng cho người dùng yêu thích thiết kế mỏng nhẹ và hiệu năng cao. Với thiết kế tinh tế, cấu hình mạnh mẽ và tính năng độc quyền, HP Envy 13 là một lựa chọn hấp dẫn 
+        cho những ai đang tìm kiếm một chiếc laptop đẳng cấp.</p>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

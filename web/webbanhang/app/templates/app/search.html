@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {% block register %}
+        <h2><strong>Sản phẩm được tìm kiếm: {{searched}}</strong></h2><br />
+        <style>
+          h2{
+            color: red
+          }
+        </style>
+
+        <div class="row" style="width:100%">
+          {%for product in keys %}
+          <div class="col-lg-3">
+            <img class="thumbnail" src="{{product.ImageURL}}">
+            <div class="box-element product">
+              <h5><strong>{{product.name}}</strong></h5>
+              <hr>
+              
+              <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+              <a class="btn btn-outline-success" href="{{product.description}}">Thông tin sản phẩm</a>
+              <h3 style="display: inline-block; float: left, down"><strong>{{product.price | floatformat:0}} VND</strong></h3>
+
+            </div>
+          </div>
+          
+          {% endfor %}
+        </div>
+        {% endblock register %}
+    </body>
+</html>

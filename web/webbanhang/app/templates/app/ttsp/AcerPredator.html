@@ -1,0 +1,68 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acer Predator Helios 300</h1>
+    <img class="thumbnail" src="{% static 'app/images/acerPredator300.jpg' %}" alt="Acer Predator Helios 300">
+    <div class="product-details">
+        <p class="product-price">Giá: 26,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li><strong>Màn hình:</strong> 15.6 inch Full HD, tần số làm tươi 144Hz</li>
+        <li><strong>Bộ vi xử lý:</strong> Intel Core i7-10750H 6 nhân, 12 luồng, tốc độ tối đa 5.0GHz</li>
+        <li><strong>Card đồ họa:</strong> NVIDIA GeForce RTX 3060 6GB GDDR6</li>
+        <li><strong>Bộ nhớ:</strong> 16GB DDR4, tốc độ 2933MHz</li>
+        <li><strong>Ổ đĩa cứng:</strong> 512GB SSD NVMe</li>
+        <li><strong>Hệ điều hành:</strong> Windows 10 Home 64 bit</li>
+        <li><strong>Kết nối:</strong> Wi-Fi 6, Bluetooth 5.0</li>
+        <li><strong>Cổng giao tiếp:</strong> 1 x USB Type-C, 1 x USB 3.2 Gen2, 2 x USB 3.2 Gen1, 1 x HDMI, 1 x RJ-45</li>
+        <li><strong>Pin:</strong> 4 cell, 59Wh</li>
+        <li><strong>Trọng lượng:</strong> 2.3kg</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Laptop Acer Predator Helios 300 là một trong những dòng laptop gaming được đánh giá cao về hiệu năng và khả năng chơi game. Với màn hình Full HD với tần số làm tươi 144Hz, bộ vi xử lý Intel Core i7, card đồ họa NVIDIA GeForce RTX, RAM 16GB và ổ đĩa SSD tốc độ cao, đây là một lựa chọn tuyệt vời cho các game thủ đam mê chơi game và đồ họa.</p>
+            </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

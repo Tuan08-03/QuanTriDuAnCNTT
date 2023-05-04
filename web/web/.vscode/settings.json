@@ -1,0 +1,5 @@
+{
+    "[html]": {
+        "editor.wordBasedSuggestionsMode": "allDocuments"
+    }
+}

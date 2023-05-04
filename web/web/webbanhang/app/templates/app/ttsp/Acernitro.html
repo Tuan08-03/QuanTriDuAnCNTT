@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acer Nitro 5 Tiger AN515</h1>
+    <img class="thumbnail" src="{% static 'app/images/acerNitro5.jpg' %}" alt="Acer Nitro 5 Tiger AN515">
+    <div class="product-details">
+        <p class="product-price">Giá: 25,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình Full HD 15.6 inch với tần số làm tươi 144Hz giúp trải nghiệm game mượt mà hơn.</li>
+        <li>Bộ vi xử lý Intel Core i5 hoặc i7 thế hệ thứ 10 hoặc 11, cùng với tùy chọn RAM lên đến 32GB DDR4.</li>
+        <li>Card đồ họa đỉnh cao NVIDIA GeForce RTX 30 Series hoặc GTX 16 Series, đảm bảo hiệu suất chơi game ấn tượng.</li>
+        <li>Ổ đĩa cứng SSD NVMe dung lượng lớn, cùng với khe cắm HDD hoặc SSD để mở rộng không gian lưu trữ.</li>
+        <li>Âm thanh vòm 3D với công nghệ DTS:X Ultra mang lại trải nghiệm âm thanh sống động khi chơi game hay xem phim.</li>
+        <li>Bàn phím có đèn nền RGB và phím WASD có độ nảy tốt giúp người dùng dễ dàng điều khiển trong quá trình chơi game.</li>
+        <li>Các kết nối đa dạng với cổng USB Type-C, cổng HDMI, cổng RJ45, cổng USB 3.2, cổng USB 2.0, đầu đọc thẻ nhớ SD.</li>
+        <li>Hệ thống tản nhiệt hoạt động hiệu quả với công nghệ Acer CoolBoost giúp duy trì nhiệt độ hoạt động ổn định.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Acer Nitro 5 Tiger AN515 là một chiếc laptop gaming mạnh mẽ từ Acer, được trang bị cấu hình cao để đáp ứng nhu cầu 
+        chơi game và đa phương tiện của người dùng. Với thiết kế độc đáo, bộ vi xử lý mạnh mẽ, card đồ họa đỉnh cao, màn hình 
+        cao refresh rate và âm thanh vòm 3D, Acer Nitro 5 Tiger AN515 là một lựa chọn hấp dẫn cho các game thủ và người dùng 
+        yêu thích công nghệ.</p>
+            </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

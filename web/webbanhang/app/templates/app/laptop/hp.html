@@ -1,0 +1,153 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+  {% block news-content %}
+  <head>
+    <title>Laptop HP</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #00ff00;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      nav li {
+        float: left;
+      }
+      nav li a {
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        background-color: #ddd;
+      }
+      main {
+        margin: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .product {
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        width: 200px;
+        height: 300px;
+        text-align: center;
+      }
+      .product img {
+        max-width: 100%;
+        max-height: 200px;
+      }
+      .product h2 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      .product p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #666;
+      }
+      .product button {
+        display: block;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #0071c5;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .product button:hover {
+        background-color: #005d9c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><strong>Laptop HP</strong></h1>
+      <style>
+        h1{
+          color: red
+        }
+      </style>
+    </header>
+    
+        <main>
+          <div class="row">
+            <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/hpSpectre360.jpg' %}" alt="HP Spectre x360">
+            <h2>HP Spectre x360</h2>
+            <h3>Giá: 20,550,000 VND</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'Hpspectre' %}">Thông tin sản phẩm</a>
+              </div>
+            
+              <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/hpEnvy13.jpg' %}" alt="HP Envy 13">
+            <h2>HP Envy 13</h2>
+            <h3>Giá: 15,050,000 VND</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'Hpenvy' %}">Thông tin sản phẩm</a>
+              </div>
+
+              <div class="col-lg-3">
+            <img class="thumbnail" src="{% static 'app/images/hpPavilion15.jpg' %}" alt="HP Pavilion 15">
+            <h2>HP Pavilion 15</h2>
+            <h3>Giá: 18,990,000</h3>
+            <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+            <a class="btn btn-outline-success" href="{% url 'Hppavilion' %}">Thông tin sản phẩm</a>
+              </div>
+
+              <div class="col-lg-3">
+                <img class="thumbnail" src="{% static 'app/images/hpElitebook.jpg' %}" alt="HP Elitebook 840">
+                <h2>HP Elitebook 840</h2>
+                <h3>Giá: 21,990,000 VND</h3>
+                <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                <a class="btn btn-outline-success" href="{% url 'Hpelitebook' %}">Thông tin sản phẩm</a>
+                  </div>
+
+                  <div class="col-lg-3">
+                    <img class="thumbnail" src="{% static 'app/images/hpOmen16.jpg' %}" alt="HP Omen 16">
+                    <h2>HP Omen 16</h2>
+                    <h3>Giá: 23,000,000 VND</h3>
+                    <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                    <a class="btn btn-outline-success" href="{% url 'Hpomen' %}">Thông tin sản phẩm</a>
+                      </div>
+
+                      <div class="col-lg-3">
+                        <img class="thumbnail" src="{% static 'app/images/hpStream.jpg' %}" alt="HP Stream 11-d001TU">
+                        <h2>HP Stream 11-d001TU</h2>
+                        <h3>Giá: 14,990,000 VND</h3>
+                        <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Thêm vào giỏ hàng</button>
+                        <a class="btn btn-outline-success" href="{% url 'Hpstream' %}">Thông tin sản phẩm</a>
+                          </div>
+            </div>
+            <style>
+              h3{
+                font-weight: bold;
+              }
+            </style>
+      </div>
+    </main>
+    </body>
+    {% endblock news-content %}
+    </html>

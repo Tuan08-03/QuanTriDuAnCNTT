@@ -1,0 +1,72 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Asus TUF</h1>
+    <img class="thumbnail" src="{% static 'app/images/asusTUF.jpg' %}" alt="Asus TUF">
+    <div class="product-details">
+        <p class="product-price">Giá: 32,890,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Bộ vi xử lý: Intel Core i5-11300H hoặc AMD Ryzen 5 5600H</li>
+        <li>Card đồ họa: NVIDIA GeForce GTX 1650 hoặc AMD Radeon RX 5600M</li>
+        <li>Bộ nhớ: 8GB hoặc 16GB RAM DDR4</li>
+        <li>Ổ cứng: 512GB hoặc 1TB SSD NVMe</li>
+        <li>Màn hình: 15.6-inch Full HD IPS hoặc 144Hz hoặc 240Hz</li>
+        <li>Hệ điều hành: Windows 10 Home</li>
+        <li>Bàn phím: Backlit Keyboard</li>
+        <li>Kết nối: Wi-Fi 6, Bluetooth 5.1, USB Type-C, HDMI</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Laptop Asus TUF là một chiếc laptop chơi game có giá thành khá hợp lý nhưng lại có hiệu suất tốt. Laptop được trang bị bộ vi xử lý Intel Core i5-11300H hoặc AMD Ryzen 5 5600H, kèm với card đồ họa NVIDIA GeForce GTX 1650 hoặc AMD Radeon RX 5600M. Đi kèm với bộ nhớ 8GB hoặc 16GB RAM DDR4 và ổ cứng SSD NVMe 512GB hoặc 1TB, Asus TUF có thể chạy mượt mà các game nặng và các ứng dụng đòi hỏi tài nguyên cao.</li>
+
+    <li>Màn hình của Asus TUF có hai tùy chọn, bao gồm màn hình Full HD IPS và màn hình 144Hz hoặc 240Hz, mang lại trải nghiệm xem hình ảnh tuyệt vời cho người dùng. Bàn phím Backlit Keyboard giúp người dùng có thể đánh chữ dễ dàng trong môi trường thiếu ánh sáng.</li>
+
+    <li>Ngoài ra, Asus TUF cũng bao gồm các tính năng kết nối như Wi-Fi 6, Bluetooth 5.1, USB Type-C và HDMI để người dùng có thể kết nối dễ dàng với các thiết bị khác.</li>
+
+    <li>Tổng quan, Laptop Asus TUF là một chiếc laptop chơi game có giá thành hợp lý nhưng lại cung cấp hiệu suất tốt và tính năng linh hoạt, phù hợp cho người dùng có ngân sách hạn chế.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

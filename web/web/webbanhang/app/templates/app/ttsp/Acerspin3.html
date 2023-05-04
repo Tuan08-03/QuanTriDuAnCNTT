@@ -1,0 +1,68 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acer Spin 3</h1>
+    <img class="thumbnail" src="{% static 'app/images/acerSpin3.jpg' %}" alt="Acer Spin 3">
+    <div class="product-details">
+        <p class="product-price">Giá: 17,090,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình cảm ứng Full HD IPS 14 inch với khả năng xoay 360 độ.</li>
+        <li>Bộ vi xử lý Intel Core i5 hoặc i7 thế hệ thứ 10 hoặc 11.</li>
+        <li>Bộ nhớ RAM 8 GB hoặc 16 GB DDR4.</li>
+        <li>Ổ đĩa cứng SSD dung lượng lên đến 1 TB.</li>
+        <li>Card đồ họa tích hợp Intel UHD Graphics.</li>
+        <li>Kết nối Wi-Fi 6, Bluetooth 5.0, cổng USB Type-C, cổng USB 3.0, cổng HDMI, đầu đọc thẻ nhớ SD.</li>
+        <li>Trọng lượng nhẹ khoảng 1,7 kg và pin Li-ion 3 cell lên đến 12 giờ sử dụng.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Acer Spin 3 là một chiếc laptop 2 trong 1 (convertible) với thiết kế độc đáo cho phép người dùng 
+        có thể sử dụng nó như một laptop thông thường hoặc xoay màn hình 360 độ để sử dụng như một máy tính bảng. 
+        Với màn hình cảm ứng Full HD IPS kích thước 14 inch, Acer Spin 3 mang đến trải nghiệm đa năng và linh 
+        hoạt cho việc làm việc, giải trí, hoặc giao tiếp trực tuyến.</p>
+            </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

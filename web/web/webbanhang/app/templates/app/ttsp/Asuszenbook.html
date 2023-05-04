@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Asus ZenBook Pro</h1>
+    <img class="thumbnail" src="{% static 'app/images/asusZenobook.jpg' %}" alt="Asus ZenBook Pro">
+    <div class="product-details">
+        <p class="product-price">Giá: 21,000,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>CPU: Intel Core i9-11900H, 8 nhân, 16 luồng</li>
+        <li>RAM: 32GB DDR4</li>
+        <li>Ổ cứng: 1TB SSD NVMe PCIe 3.0</li>
+        <li>Màn hình: 15.6 inch OLED 4K UHD (3840 x 2160), hỗ trợ công nghệ touch</li>
+        <li>Card đồ họa: NVIDIA GeForce RTX 3070 8GB GDDR6</li>
+        <li>Hệ điều hành: Windows 10 Pro</li>
+        <li>Pin: Li-Po 8 cell, 92Wh, hỗ trợ sạc nhanh 230W</li>
+        <li>Kết nối: Wi-Fi 6, Bluetooth 5.1, Thunderbolt 3, HDMI, USB 3.2, đầu đọc thẻ nhớ</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Laptop Asus ZenBook Pro là một trong những lựa chọn hàng đầu cho người dùng chuyên nghiệp và đam mê công nghệ. Với cấu hình mạnh mẽ với vi xử lý Intel Core i9, bộ nhớ RAM lớn, ổ cứng SSD nhanh chóng và card đồ họa cao cấp, ZenBook Pro đáp ứng được mọi nhu cầu xử lý đa nhiệm, đồ họa, và giải trí.</li>
+    <li>Màn hình OLED 4K UHD của ZenBook Pro cho hình ảnh sắc nét, chân thực, với độ phân giải cao và hỗ trợ công nghệ touch, mang đến trải nghiệm tuyệt vời cho công việc và giải trí. Thiết kế sang trọng với vỏ kim loại, bàn phím có đèn nền và tính di động cao với trọng lượng nhẹ và thời lượng pin dài cũng là điểm cộng lớn của sản phẩm này.</li>
+    <li>Tuy nhiên, ZenBook Pro cũng có giá thành cao hơn so với nhiều mẫu laptop khác trên thị trường và không phải là lựa chọn phổ thông cho người dùng có nhu cầu sử dụng cơ bản. Ngoài ra, với cấu hình mạnh, laptop này cũng có thể gặp phải vấn đề về khả năng nóng và tiêu thụ năng lượng, đòi hỏi người dùng cần chú ý đến việc quản lý nhiệt độ và sạc pin để đảm bảo hiệu suất hoạt động tốt nhất.</li>
+    <li>Tổng quát, laptop Asus ZenBook Pro là một sản phẩm cao cấp với cấu hình mạnh mẽ, màn hình chất lượng cao, thiết kế sang trọng và tính di động cao. Đây là lựa chọn lý tưởng cho những người dùng chuyên nghiệp, đòi hỏi hiệu suất cao trong công việc và giải trí.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>HP Spectre x360</h1>
+    <img class="thumbnail" src="{% static 'app/images/hpSpectre360.jpg' %}" alt="HP Spectre x360">
+    <div class="product-details">
+        <p class="product-price">Giá: 20,550,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: Màn hình cảm ứng 13,3 inch hoặc 15,6 inch, độ phân giải Full HD (1920x1080) hoặc 4K (3840x2160).</li>
+        <li>Thiết kế: Thiết kế sang trọng với khung kim loại cao cấp, mỏng nhẹ và cắt CNC chính xác, với các góc bo tròn tinh tế. Thiết bị có màu sắc đa dạng, bao gồm màu Bạc, Đen, Vàng hoặc Hồng.</li>
+        <li>Bộ vi xử lý: Sử dụng bộ vi xử lý Intel Core i5 hoặc i7 thế hệ thứ 10 hoặc thứ 11.</li>
+        <li>Bộ nhớ: Hỗ trợ RAM DDR4 từ 8GB đến 16GB.</li>
+        <li>Lưu trữ: Tùy chọn lưu trữ SSD từ 256GB đến 2TB.</li>
+        <li>Đồ họa: Sử dụng đồ họa tích hợp Intel Iris Xe Graphics hoặc NVIDIA GeForce MX450 (tùy chọn).</li>
+        <li>Pin: Pin lithium-ion tích hợp có thể sử dụng lên đến 12 giờ (trên mẫu 13,3 inch) hoặc 16 giờ (trên mẫu 15,6 inch).</li>
+        <li>Công nghệ âm thanh: Tích hợp công nghệ âm thanh Bang & Olufsen độc quyền.</li>
+        <li>Hệ điều hành: Được cài đặt sẵn Windows 10.</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <p>Laptop HP Spectre x360 là một máy tính xách tay cao cấp của HP, thuộc dòng sản phẩm Spectre của họ. Đây là một thiết bị 
+        2 trong 1, có thể được sử dụng như một máy tính xách tay hoặc một máy tính bảng, có thể xoay màn hình 360 độ để đáp
+        ứng nhu cầu sử dụng đa dạng.</p>
+            </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

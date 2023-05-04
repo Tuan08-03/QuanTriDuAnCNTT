@@ -1,0 +1,69 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lenovo Yoga</h1>
+    <img class="thumbnail" src="{% static 'app/images/lenovoYoga.jpg' %}" alt="Lenovo Yoga">
+    <div class="product-details">
+        <p class="product-price">Giá: 20,990,000 VND</p>
+        <h2>Thông số kỹ thuật:</h2>
+    <ul>
+        <li>Màn hình: thường là 13,3 hoặc 14 inch, độ phân giải Full HD hoặc 4K UHD, có tính năng xoay 360 độ</li>
+		<li>Vi xử lý: Intel Core i5 hoặc i7 hoặc AMD Ryzen 5 hoặc 7</li>
+		<li>RAM: từ 8GB đến 16GB DDR4</li>
+		<li>Ổ đĩa cứng: từ 256GB đến 1TB PCIe NVMe SSD</li>
+		<li>Card đồ họa: Intel UHD Graphics hoặc NVIDIA GeForce hoặc AMD Radeon</li>
+		<li>Kết nối: thường bao gồm cổng USB Type-C, USB 3.1, HDMI, Ethernet, và thẻ nhớ SD</li>
+		<li>Trọng lượng: từ 1,3kg đến 1,6kg tùy theo model</li>
+		<li>Hệ điều hành: Windows 10 hoặc Chrome OS</li>
+    </ul>
+    <h2>Đánh giá:</h2>
+    <li>Lenovo Yoga là dòng laptop 2 trong 1 của Lenovo, có khả năng xoay 360 độ giữa chế độ laptop và tablet. Điều này mang lại sự linh hoạt cho người dùng, giúp họ có thể sử dụng laptop theo nhiều cách khác nhau tùy theo nhu cầu.</li>
+    <li>Yoga được trang bị vi xử lý mạnh mẽ, RAM đủ lớn, ổ đĩa cứng nhanh, và card đồ họa tốt, đảm bảo khả năng xử lý tốt các tác vụ văn phòng, giải trí, và đa nhiệm. Ngoài ra, màn hình của Yoga thường có độ phân giải cao, cho hình ảnh sắc nét và chân thực.</li>
+    <li>Bên cạnh đó, Yoga còn có thiết kế mỏng nhẹ và đẹp mắt, làm cho nó trở thành lựa chọn phổ biến cho các doanh nhân và người dùng cá nhân đòi hỏi tính di động và thiết kế thời trang. Tuy nhiên, vì khả năng xoay và thiết kế đặc biệt, Yoga thường có giá thành cao hơn so với các dòng laptop thông thường.</li>
+    <li>Một số model của Yoga cũng có thể không được trang bị bộ pin lớn, dẫn đến thời lượng pin ngắn hơn so với các dòng laptop khác trên thị trường.</li>
+        </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>

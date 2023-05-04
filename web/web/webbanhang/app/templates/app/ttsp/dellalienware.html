@@ -1,0 +1,62 @@
+{% extends 'app/base.html' %}
+{% load static %}
+<html>
+    {% block news-content %}
+<head>
+    <title>Thông tin sản phẩm laptop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            margin-bottom: 20px;
+        }
+        .product-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #28A745;
+        }
+        .product-description {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dell Alienware M15 R4</h1>
+    <img class="thumbnail" src="{% static 'app/images/dellAlien.jpg' %}" alt="Dell Alienware">
+    <div class="product-details">
+        <p class="product-price">Giá: 50,000,000 VND</p>
+        <p class="product-description">Mô tả: Laptop Dell Alienware M15 R4 là một trong những dòng laptop chuyên dụng cho gaming của Dell, với thiết kế độc đáo, hiệu suất cực mạnh và tính di động cao. Với vi xử lý Intel Core i7, RAM 32GB, ổ cứng SSD 1TB, card đồ họa NVIDIA GeForce RTX 3070, màn hình 15.6 inch Full HD với tần số làm mới cao, Dell Alienware M15 R4 là lựa chọn hàng đầu cho những game thủ đam mê trải nghiệm game cao cấp và đa nhiệm.</p>
+        <p class="product-description">Đặc điểm nổi bật:</p>
+        <ul>
+            <li>Thiết kế độc đáo với kiểu dáng đẳng cấp, hệ thống đèn LED RGB tùy chỉnh, bàn phím có phím macro.</li>
+            <li>Màn hình Full HD với tần số làm mới cao, độ sắc nét cao, độ phản hồi nhanh.</li>
+            <li>Cấu hình mạnh mẽ với vi xử lý Intel Core i7, RAM 32GB, ổ cứng SSD 1TB giúp xử lý tác vụ đa nhiệm và chơi game mượt mà.</li>
+            <li>Card đồ họa NVIDIA GeForce RTX 3070 với hiệu năng cao, hỗ trợ công nghệ Ray Tracing, AI và DLSS cho trải nghiệm game sống động và chân thực.</li>
+            <li>Hệ thống làm mát tiên tiến với công nghệ Alienware Cryo-Tech v2.0, giúp duy trì nhiệt độ hoạt động ổn định.</li>
+        </ul>
+    </div>
+    <p><strong>Liên hệ:</strong> Địa chỉ: Số 235 Hoàng Quốc Việt - Phường Cổ Nhuế 1 - Quận Bắc Từ Liêm - Thành phố Hà Nội <br>
+        Điện thoại: 0922692002<br>
+        Email: shoplaptop@gmail.com</p>
+        <style>
+            p{
+                font-weight: bold
+            }
+        </style>
+</body>
+{% endblock news-content %}
+</html>
